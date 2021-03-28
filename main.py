@@ -26,15 +26,15 @@ def main():
     st.markdown(html_temp, unsafe_allow_html=True)
 
     Amount_Requested = st.text_input("Amount Requested")
-    Risk_Score = st.text_input("Frequency(times)")
-    Debt_to_Income_Ratio= st.text_input("Monetory(cc blood)")
-    Employment_Length= st.text_input("Time(months) ")
+    Risk_Score = st.text_input("Risk Score")
+    Debt_to_Income_Ratio= st.text_input("Debt to Income Ratio")
+    Employment_Length= st.text_input("Employment Length ")
 
 
 
     if st.button("Predict"):
         
-        features = [Amount_Requested,Risk_Score,Debt_to_Income_Ratio,Employment_ssLength]
+        features = [Amount_Requested , Risk_Score , Debt_to_Income_Ratio , Employment_Length]
         predict, proba = loan_default(features)
         if predict[0] == 1:
             
