@@ -22,8 +22,9 @@ def main():
 
 classifier_name = st.sidebar.selectbox(
     'Select classifier',
-    ('Logistic Regression','Random Forest')
+    ('Logistic Regression', 'Random Forest')
 )
+    st.write(f"## {dataset_name} Dataset")
     html_temp = """
     <div style="background-color:#dd88b3 ;padding:10px">
     <h2 style="color:white;text-align:center;">Loan Approval Prediction App </h2>
