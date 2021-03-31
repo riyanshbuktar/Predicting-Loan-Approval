@@ -24,7 +24,7 @@ def func_mweacraf():
 def main():
     st.title("Loan Approval Prediction")
     classifier_name = st.sidebar.selectbox(
-    'Selectclassifier',
+    'Select classifier',
     ('Logistic Regression', 'Random Forest')
 )
     html_temp = """
