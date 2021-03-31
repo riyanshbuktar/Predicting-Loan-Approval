@@ -30,7 +30,7 @@ def main():
     st.title("Loan Approval Prediction")
     dataset_name = st.sidebar.selectbox(
     'Select Dataset',
-    ('Lending Clubs Loan Dataset')
+    ('LendingClubsDataset')
 )
 
 
